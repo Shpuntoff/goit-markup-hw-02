@@ -1,0 +1,72 @@
+:root {
+    --primary-text-color:#212121;
+    --secondary-text-color:#757575;
+    --accent-color: #2196F3;
+    --button-main-color-text: #FFFFFF;
+    --primary-bg-color: #E5E5E5;
+    --secondary-bg-color: #F5F4FA;
+
+
+
+}
+
+body {
+    background-color: #E5E5E5;
+    color: var(--primary-text-color);
+    font-family: Roboto, sans-serif;
+
+}
+.list {
+    list-style: none;
+}
+
+/* цвет основного текста #212121*/
+/* цвет вторичного текста #757575*/
+/* фон #E5E5E5*/
+/* вторичный фон #F5F4FA*/
+/* акцент #2196F3*/
+/* */
+.headlogo {
+    color: #000000;
+}
+
+
+/* site nav */
+.site-nav .link {
+    color: var(--primary-text-color);
+}
+.site-nav .link:hover,
+.site-nav .link:focus {
+    color: var(--accent-color);
+}
+.site-nav .link.current {
+    color: var(--accent-color);
+}
+
+
+/* site main contacts  */
+.site-contacts .link {
+    color: var(--secondary-text-color);
+}
+.site-contacts .link:hover,
+.site-contacts .link:focus {
+    color: var(--accent-color)
+}
+.section-title {
+    color: var(--primary-text-color);
+}
+
+/* buttons */
+.button.primary {
+    color: var(--button-main-color-text);
+    background-color: var(--accent-color);
+}
+.button.secondary {
+    color: var(--primary-text-color);
+    background-color: var(--secondary-bg-color);
+}
+.button.secondary:hover,
+.button.secondary:focus {
+    color: var(--button-main-color-text);
+    background-color: var(--accent-color);
+}
