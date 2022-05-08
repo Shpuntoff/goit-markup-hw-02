@@ -2,12 +2,12 @@
     --primary-text-color:#212121;
     --secondary-text-color:#757575;
     --accent-color: #2196F3;
-    --button-main-color-text: #FFFFFF;
+    --main-white-text: #FFFFFF;
     --primary-bg-color: #E5E5E5;
     --secondary-bg-color: #F5F4FA;
-
-
-
+    --main-black-text: #000000;
+    --footer-color: #2F303A;
+    --adress-text: rgba(255, 255, 255, 0.6);
 }
 
 body {
@@ -15,25 +15,47 @@ body {
     color: var(--primary-text-color);
     font-family: Roboto, sans-serif;
 
+    letter-spacing: 0.03em;
+
+}
+address {
+    font-family: inherit;
 }
 .list {
     list-style: none;
 }
 
-/* цвет основного текста #212121*/
-/* цвет вторичного текста #757575*/
-/* фон #E5E5E5*/
-/* вторичный фон #F5F4FA*/
-/* акцент #2196F3*/
-/* */
-.headlogo {
-    color: #000000;
+
+/* logo */
+.logo {
+    font-family: Raleway, sans-serif;
+    font-size: 26px;
+    line-height: 1.19;
+
+    text-decoration: none;
+}
+.head.logo {
+    color: var(--main-black-text);
+}
+.footer.logo {
+    color: var(--main-white-text);
+}
+.logo-accent {
+    color: var(--accent-color);
 }
 
 
 /* site nav */
 .site-nav .link {
     color: var(--primary-text-color);
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.43;
+    letter-spacing: 0.02em;
+
+    text-decoration: none;
+
 }
 .site-nav .link:hover,
 .site-nav .link:focus {
@@ -43,10 +65,17 @@ body {
     color: var(--accent-color);
 }
 
-
 /* site main contacts  */
 .site-contacts .link {
     color: var(--secondary-text-color);
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.43;
+    letter-spacing: 0.02em;
+
+    text-decoration: none;
+
 }
 .site-contacts .link:hover,
 .site-contacts .link:focus {
@@ -55,18 +84,130 @@ body {
 .section-title {
     color: var(--primary-text-color);
 }
+.section-title.hide {
+    color: 0,0,0,0,0;
+}
 
 /* buttons */
+button {
+    font-family: inherit;
+}
+.button.hero {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+}
 .button.primary {
-    color: var(--button-main-color-text);
+    color: var(--main-white-text);
     background-color: var(--accent-color);
 }
 .button.secondary {
     color: var(--primary-text-color);
     background-color: var(--secondary-bg-color);
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    
+    text-align: center;
 }
 .button.secondary:hover,
 .button.secondary:focus {
-    color: var(--button-main-color-text);
+    color: var(--main-white-text);
     background-color: var(--accent-color);
+}
+
+/* Hero */
+.hero-title {
+    color: var(--main-white-text);
+
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+/* Особенности */
+.hide {
+    display: none;
+}
+.features-list.title {
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.43;
+    text-transform: uppercase;
+}
+.features .text {
+    color: var(--secondary-text-color);
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+}
+.section-title {
+
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+}
+.team-title,
+.team .text {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+}
+.team .text {
+    color:var(--secondary-text-color);
+}
+.card {
+    background-color: var(--main-white-text);
+    
+}
+.work.link{
+    color: var(--primary-text-color);
+    text-decoration: none;
+}
+.work-title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    
+    letter-spacing: 0.06em;
+}
+.work .text {
+    color: var(--secondary-text-color);
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.88;
+
+}
+
+footer {
+    background-color: var(--footer-color);
+}
+.adress {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    
+    text-decoration: none;
+    letter-spacing: 0.03em;
+}
+
+.adress.steet {
+    color: var(--main-white-text);
+}
+.adress.contacts {
+    color: var(--adress-text);
 }
