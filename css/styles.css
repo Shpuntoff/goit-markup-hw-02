@@ -132,9 +132,9 @@ body {
 
     line-height: 1.71;
 }
+/* whatwedo and team section */
 .whatwedo-title,
-.team-title,{
-
+.team-title {
     font-size: 36px;
     line-height: 1.17;
     text-align: center;
@@ -155,13 +155,15 @@ body {
 .member-description {
     color:var(--secondary-text-color);
 }
+/* work section */
 .card {
     background-color: var(--main-white-text);
-    
 }
-.work.link{
+
+.work.link {
     color: var(--primary-text-color);
 }
+
 .work-title {
     font-size: 18px;
     line-height: 2;
@@ -178,8 +180,7 @@ body {
 footer {
     background-color: var(--footer-color);
 }
-
-
+/* adress */
 .streat.link,
 .contacts.link {
     font-style: normal;
