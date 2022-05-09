@@ -179,13 +179,13 @@ footer {
     background-color: var(--footer-color);
 }
 
-.streat.link {
-    color: var(--main-white-text);
-}
-.contacts.link {
-    color: var(--adress-text);
-}
+
 .streat.link,
 .contacts.link {
     font-style: normal;
     line-height: 1.71;
+    color: var(--adress-text);
+}
+.streat.link {
+    color: var(--main-white-text);
+    }
