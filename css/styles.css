@@ -52,8 +52,7 @@ body {
     line-height: 1.43;
     letter-spacing: 0.02em;  
 }
-.streat.link:hover,
-.streat.link:focus,
+
 .contacts.link:hover,
 .contacts.link:focus,
 .logo-accent,
@@ -133,8 +132,7 @@ body {
     line-height: 1.71;
 }
 /* whatwedo and team section */
-.whatwedo-title,
-.team-title {
+.section-title {
     font-size: 36px;
     line-height: 1.17;
     text-align: center;
